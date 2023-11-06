@@ -37,3 +37,17 @@ let alienRows = 2;
 let alienColumns = 3;
 let alienCount = 0;
 let alienVelocityX = 1;
+
+// bullets
+let bulletArray = [];
+let bulletVelocityY = -10;
+
+let score = 0;
+let gameOver = false;
+
+window.onload = function() {
+    board = document.getElementById("board");
+    board.width = boardWidth;
+    board.height = boardHeight;
+    context = board.getContext("2d");
+}
