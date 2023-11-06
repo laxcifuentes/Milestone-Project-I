@@ -51,3 +51,54 @@ window.onload = function() {
     board.height = boardHeight;
     context = board.getContext("2d");
 }
+
+// images
+shipImg = new Image();
+shipImg.src = "./ship.png";
+shipImg.onload = function() {
+    context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
+}
+
+alienImg = new Image();
+alienImg.src = "./alien.png";
+createAliens();
+
+requestAnimationFrame(update);
+document.addEventListener("keydown", moveShip);
+document.addEventListener("keyup", shoot);
+
+function update() {
+requestAnimationFrame(update);
+
+if (gameOver) {
+    return;
+}
+
+context.clearRect(0, 0, board.width, board.height);
+
+// ship
+context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
+
+// alien
+for (let i = 0; i < alienArray.length; i++) {
+    let alien = alienArray[i];
+    if (alien.alive) {
+        alien.x += alienVelocityX;
+
+        // if alien touches the borders
+        if (alien.x + alien.width >= board.width || alien.x <= 0) {
+            alienVelocityX *= -1;
+            alien.x += alienVelocityX*2;
+
+            // move all aliens up by one row
+            for (let j = 0; j < alienArray.length; j++) {
+                alienArray[j].y += alienHeight;
+            }
+        }
+        context.drawImage(alienImg, alien.x, alien.y, alien.width, alien.height);
+
+        if (alien.y >= ship.y) {
+            gameOver = true;
+        }
+    }
+}
