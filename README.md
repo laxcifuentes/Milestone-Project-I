@@ -11,4 +11,5 @@ SOURCES:
 - Kenny Yip coding space invaders in js, html, css https://www.youtube.com/watch?v=v74X5dtDLvg&list=PLnKe36F30Y4bLhA-st9sC4ZthyV7nsL2Q&index=8
 - Google (W3 Schools, Stack Overflow, MDN Web Docs)
 - Canvas power points, panopto class recordings
-- 
+- JavaScript tutorial for beginners https://www.youtube.com/watch?v=W6NZfCO5SIk
+- Javascript 2D game tutorial https://www.youtube.com/watch?v=jl29qI62XPg&t=1539s
