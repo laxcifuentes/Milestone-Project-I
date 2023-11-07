@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <meta name="viewport," content="width=device-width, initial-scale=1.0">
     <title>SPACE INVADERS</title>
     <link rel="stylesheet" href="style.css">
     <script src="/index.js"></script>
@@ -11,6 +11,13 @@
       <h1>MILESTONE PROJECT I | SPACE INVADERS</h1>
     <main>
       <canvas id="board"></canvas>
+        <div id="start" style="display:none">
+            <a href="#" onclick="startGame()">Start Game</a>
+        </div>
+        <div id="game-over" style="display:none">
+            <h1>Game Over</h1>
+            <a href="#" onclick="startGame()">Start Game</a>
+        </div>
       <!-- <button>START</button> -->
     </main>
     <footer>
