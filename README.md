@@ -13,3 +13,4 @@ SOURCES:
 - Canvas power points, panopto class recordings
 - JavaScript tutorial for beginners https://www.youtube.com/watch?v=W6NZfCO5SIk
 - Javascript 2D game tutorial https://www.youtube.com/watch?v=jl29qI62XPg&t=1539s
+- Space background photo by: Ivana Cajina https://unsplash.com/photos/milky-way-asuyh-_ZX54
